@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>フジ自動車工業株式会社 三好工場｜トラック・大型車輌の車検・整備・鈑金</title>
+<meta name="description" content="愛知県みよし市のトラック・大型車輌整備工場。車検・点検・鈑金塗装・フォークリフト整備・リースメンテナンスまで、創業70年のフジ自動車工業 三好工場にお任せください。">
+<style>
+  :root {
+    --blue: #3e7eb0;        /* コーポレート主色 */
+    --blue-hover: #306c9a;
+    --blue-dark: #2c5d85;
+    --blue-deep: #1e4468;
+    --red: #d04949;         /* アクセント */
+    --red-dark: #b83b3b;
+    --tint: #f5f8fb;
+    --gray: #f7f7f7;
+    --line: #e1e1e1;
+    --text: #333333;
+    --text-sub: #6f7a85;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, "Yu Gothic", sans-serif;
+    color: var(--text); background: var(--white); line-height: 1.8;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+  /* ===== ヘッダー ===== */
+  .header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.97); border-bottom: 1px solid var(--line); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo { display: flex; flex-direction: column; line-height: 1.3; }
+  .logo .company { font-size: 20px; font-weight: 700; color: var(--blue-deep); letter-spacing: .04em; }
+  .logo .company span { color: var(--blue); }
+  .logo .plant { font-size: 12px; color: var(--text-sub); letter-spacing: .2em; }
+  .header-right { display: flex; align-items: center; gap: 18px; }
+  .header-tel { text-align: right; line-height: 1.4; }
+  .header-tel .num { font-size: 22px; font-weight: 700; color: var(--blue-deep); }
+  .header-tel .hours { font-size: 11px; color: var(--text-sub); }
+  .btn-contact { background: var(--blue); color: #fff; font-weight: 700; padding: 12px 26px; border-radius: 3px; font-size: 14px; transition: background .2s; }
+  .btn-contact:hover { background: var(--blue-hover); }
+
+  /* ===== ナビ ===== */
+  .gnav { background: var(--blue-deep); }
+  .gnav ul { max-width: 1200px; margin: 0 auto; padding: 0 12px; display: flex; flex-wrap: wrap; justify-content: center; list-style: none; }
+  .gnav a { display: block; padding: 12px 16px; color: #fff; font-size: 13px; font-weight: 600; letter-spacing: .05em; transition: background .2s; }
+  .gnav a:hover { background: rgba(255,255,255,.14); }
+
+  /* ===== ヒーロー ===== */
+  .hero {
+    position: relative; color: #fff; padding: 110px 20px 130px; overflow: hidden;
+    background:
+      linear-gradient(105deg, rgba(30,68,104,.90) 0%, rgba(44,93,133,.78) 45%, rgba(62,126,176,.45) 100%),
+      url("https://images.pexels.com/photos/4320468/pexels-photo-4320468.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover; background-position: center;
+  }
+  .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; }
+  .hero .en { font-size: 13px; letter-spacing: .35em; color: #fff; font-weight: 700; margin-bottom: 18px; text-transform: uppercase; }
+  .hero .en::before { content: ""; display: inline-block; width: 34px; height: 3px; background: var(--red); vertical-align: middle; margin-right: 12px; }
+  .hero h1 { font-size: clamp(28px, 4.6vw, 50px); font-weight: 800; letter-spacing: .06em; line-height: 1.5; margin-bottom: 22px; text-shadow: 0 2px 20px rgba(0,0,0,.35); }
+  .hero p.lead { font-size: clamp(14px, 1.6vw, 17px); letter-spacing: .08em; color: rgba(255,255,255,.95); max-width: 620px; text-shadow: 0 1px 10px rgba(0,0,0,.4); }
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+  .hero-badges span { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.4); padding: 7px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; letter-spacing: .05em; }
+  .hero-cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+  .btn-hero-truck { display: inline-flex; align-items: center; gap: 10px; background: var(--red); color: #fff; font-weight: 800; font-size: 15px; letter-spacing: .06em; padding: 15px 38px; border-radius: 4px; box-shadow: 0 6px 20px rgba(208,73,73,.5); transition: transform .2s, background .2s; }
+  .btn-hero-truck:hover { transform: translateY(-2px); background: var(--red-dark); }
+
+  /* ===== 共通見出し ===== */
+  .sec { padding: 90px 0; }
+  .sec-gray { background: var(--tint); }
+  .sec-head { text-align: center; margin-bottom: 54px; }
+  .sec-head .en { display: block; font-size: 12px; letter-spacing: .3em; color: var(--blue); font-weight: 700; margin-bottom: 8px; text-transform: uppercase; }
+  .sec-head .en::after { content: ""; display: block; width: 24px; height: 3px; background: var(--red); margin: 8px auto 0; }
+  .sec-head h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; color: var(--blue-deep); letter-spacing: .08em; }
+  .sec-head p.desc { margin-top: 14px; color: var(--text-sub); font-size: 14px; }
+
+  /* ===== お知らせ ===== */
+  .news-list { max-width: 780px; margin: 0 auto; border-top: 1px solid var(--line); }
+  .news-list li { list-style: none; display: flex; gap: 22px; padding: 18px 8px; border-bottom: 1px solid var(--line); font-size: 14px; align-items: baseline; }
+  .news-list time { color: var(--text-sub); flex-shrink: 0; font-size: 13px; }
+  .news-list .tag { flex-shrink: 0; background: var(--blue); color: #fff; font-size: 11px; padding: 2px 12px; border-radius: 3px; letter-spacing: .05em; }
+
+  /* ===== 強み ===== */
+  .points { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 18px; }
+  .point { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 30px 22px; text-align: center; position: relative; box-shadow: 0 2px 10px rgba(30,68,104,.05); }
+  .point .num { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 800; font-size: 17px; margin-bottom: 14px; }
+  .point h3 { font-size: 16px; color: var(--blue-deep); letter-spacing: .04em; line-height: 1.5; margin-bottom: 10px; }
+  .point p { font-size: 13px; color: var(--text-sub); line-height: 1.7; }
+  .point strong { color: var(--red); }
+
+  /* ===== サービス ===== */
+  .service { display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 44px; box-shadow: 0 4px 18px rgba(30,68,104,.06); }
+  .service:nth-child(even) .service-img { order: 2; }
+  .service-img { min-height: 300px; position: relative; overflow: hidden; }
+  .service-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .service-body { padding: 44px 46px; }
+  .service-body .num { font-size: 15px; font-weight: 800; color: var(--blue); letter-spacing: .2em; }
+  .service-body h3 { font-size: 25px; font-weight: 800; color: var(--blue-deep); letter-spacing: .06em; margin: 6px 0 2px; }
+  .service-body .en { font-size: 11px; letter-spacing: .25em; color: var(--text-sub); text-transform: uppercase; display: block; margin-bottom: 18px; }
+  .service-body p { font-size: 14px; color: var(--text); margin-bottom: 14px; }
+  .service-body ul { list-style: none; margin-top: 6px; }
+  .service-body ul li { font-size: 13.5px; padding: 7px 0 7px 24px; position: relative; border-bottom: 1px dashed var(--line); color: var(--text); }
+  .service-body ul li::before { content: "✓"; position: absolute; left: 2px; color: var(--red); font-weight: 700; }
+  .btn-more { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; background: var(--red); color: #fff; font-weight: 700; font-size: 14.5px; letter-spacing: .05em; padding: 13px 32px; border-radius: 4px; box-shadow: 0 4px 14px rgba(208,73,73,.35); transition: transform .2s, background .2s; }
+  .btn-more:hover { transform: translateY(-2px); background: var(--red-dark); }
+
+  /* ===== 料金表 ===== */
+  .price-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #fff; }
+  .price-table caption { caption-side: top; text-align: left; font-weight: 700; color: var(--blue-deep); padding-bottom: 10px; font-size: 15px; }
+  .price-table th, .price-table td { border: 1px solid var(--line); padding: 13px 18px; font-size: 14px; text-align: left; }
+  .price-table thead th { background: var(--blue); color: #fff; font-weight: 700; letter-spacing: .05em; }
+  .price-table td.price { text-align: right; font-weight: 700; color: var(--red); font-size: 16px; white-space: nowrap; }
+  .price-note { font-size: 12px; color: var(--text-sub); margin-top: 10px; }
+
+  /* ===== アクセス ===== */
+  .access-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+  .access-map iframe { width: 100%; height: 340px; border: 0; border-radius: 8px; }
+  .access-info dl { display: grid; grid-template-columns: 110px 1fr; font-size: 14.5px; }
+  .access-info dt { font-weight: 700; color: var(--blue-deep); padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .access-info dd { padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .access-info .tel-big { font-size: 26px; font-weight: 800; color: var(--blue); }
+
+  /* ===== 採用 ===== */
+  .recruit-box { background: linear-gradient(105deg, var(--blue-deep) 0%, var(--blue-dark) 100%); color: #fff; border-radius: 12px; padding: 60px 50px; text-align: center; }
+  .recruit-box h3 { font-size: 26px; letter-spacing: .1em; margin-bottom: 16px; }
+  .recruit-box p { font-size: 14.5px; color: rgba(255,255,255,.9); max-width: 640px; margin: 0 auto 30px; }
+  .btn-white { display: inline-block; background: #fff; color: var(--blue-deep); font-weight: 700; padding: 14px 46px; border-radius: 999px; font-size: 15px; letter-spacing: .08em; transition: opacity .2s; }
+  .btn-white:hover { opacity: .85; }
+
+  /* ===== 会社情報 ===== */
+  .company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+  .company-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  .company-table th, .company-table td { border-bottom: 1px solid var(--line); padding: 13px 10px; text-align: left; vertical-align: top; }
+  .company-table th { width: 120px; color: var(--blue-deep); font-weight: 700; white-space: nowrap; }
+  .history { list-style: none; }
+  .history li { position: relative; padding: 0 0 26px 34px; font-size: 14px; }
+  .history li::before { content: ""; position: absolute; left: 8px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--red); }
+  .history li::after { content: ""; position: absolute; left: 12px; top: 22px; bottom: -4px; width: 2px; background: var(--line); }
+  .history li:last-child::after { display: none; }
+  .history .year { font-weight: 800; color: var(--blue-deep); margin-right: 12px; }
+
+  /* ===== お問い合わせ ===== */
+  .contact-band { background: var(--blue); color: #fff; text-align: center; padding: 70px 20px; }
+  .contact-band h2 { font-size: 26px; letter-spacing: .1em; margin-bottom: 10px; }
+  .contact-band p { font-size: 14px; margin-bottom: 26px; color: rgba(255,255,255,.95); }
+  .contact-band .tel { font-size: 40px; font-weight: 800; letter-spacing: .04em; }
+  .contact-band .hours { font-size: 13px; margin-top: 6px; color: rgba(255,255,255,.9); }
+
+  /* ===== フッター ===== */
+  .footer { background: var(--blue-deep); color: rgba(255,255,255,.85); padding: 60px 0 0; }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 30px; padding-bottom: 44px; }
+  .footer h4 { color: #fff; font-size: 15px; margin-bottom: 10px; letter-spacing: .05em; }
+  .footer h4 span { color: #8fbfe4; font-size: 11px; margin-left: 8px; }
+  .footer p { font-size: 13px; line-height: 1.9; }
+  .footer-copy { border-top: 1px solid rgba(255,255,255,.15); text-align: center; padding: 18px; font-size: 12px; color: rgba(255,255,255,.55); }
+  .footer-copy .credit { display: block; margin-top: 4px; font-size: 11px; color: rgba(255,255,255,.4); }
+  .footer-slogan { text-align: center; padding-bottom: 34px; font-size: 15px; letter-spacing: .2em; color: rgba(255,255,255,.75); }
+
+  /* ===== レスポンシブ ===== */
+  @media (max-width: 860px) {
+    .header-tel { display: none; }
+    .service { grid-template-columns: 1fr; }
+    .service:nth-child(even) .service-img { order: 0; }
+    .service-img { min-height: 220px; }
+    .service-body { padding: 30px 24px; }
+    .access-grid, .company-grid { grid-template-columns: 1fr; }
+    .hero { padding: 70px 20px 90px; }
+    .sec { padding: 60px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="company">フジ<span>自動車工業</span>株式会社</span>
+      <span class="plant">三 好 工 場</span>
+    </div>
+    <div class="header-right">
+      <div class="header-tel">
+        <div class="num">0561-32-2131</div>
+        <div class="hours">受付：平日 8:20〜17:20</div>
+      </div>
+      <a class="btn-contact" href="#contact">お問い合わせ</a>
+    </div>
+  </div>
+  <nav class="gnav">
+    <ul>
+      <li><a href="#top">TOP</a></li>
+      <li><a href="#news">お知らせ</a></li>
+      <li><a href="#service01">車検・点検</a></li>
+      <li><a href="#service02">トラック整備</a></li>
+      <li><a href="#service03">鈑金・塗装</a></li>
+      <li><a href="#service04">フォークリフト</a></li>
+      <li><a href="#service05">リース・販売</a></li>
+      <li><a href="#access">アクセス</a></li>
+      <li><a href="#recruit">採用情報</a></li>
+      <li><a href="#company">会社情報</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ヒーロー -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="en">Truck &amp; Vehicle Maintenance Specialist</div>
+    <h1>トラック・大型車輌の整備は、<br>フジ自動車工業 三好工場へ。</h1>
+    <p class="lead">車を通じた、一生涯のお付き合いを目指して。創業70年、名古屋陸運局指定工場の技術力で、お客様の「走る」を止めません。</p>
+    <div class="hero-badges">
+      <span>創業1956年・70年の実績</span>
+      <span>名古屋陸運局指定工場</span>
+      <span>年間3,000台の整備実績</span>
+      <span>代車・引き取り納車完備</span>
+    </div>
+    <div class="hero-cta-row">
+      <a class="btn-hero-truck" href="truck.html">🚚 トラック整備 専門ページはこちら →</a>
+    </div>
+  </div>
+</section>
+
+<!-- お知らせ -->
+<section class="sec" id="news">
+  <div class="inner">
+    <div class="sec-head">
+      <span class="en">Information</span>
+      <h2>お知らせ</h2>
+    </div>
+    <ul class="news-list">
+      <li><time>2026.06.20</time><span class="tag">お知らせ</span><span>おかげさまで創業70周年を迎えました。</span></li>
+      <li><time>2026.04.01</time><span class="tag">サービス</span><span>大型車の車検予約受付を強化しました。お電話にてご相談ください。</span></li>
+      <li><time>2026.01.15</time><span class="tag">採用</span><span>整備士・サービスフロントの採用を行っています。詳しくは採用情報へ。</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 強み -->
+<section class="sec sec-gray">
+  <div class="inner">
+    <div class="sec-head">
+      <span class="en">Our Strength</span>
+      <h2>フジ自動車工業のいいところ</h2>
+      <p class="desc">70年にわたり培ってきた技術で、軽自動車から大型トラックまでトータルサポートします。</p>
+    </div>
+    <div class="points">
+      <div class="point">
+        <span class="num">01</span>
+        <h3>名古屋陸運局<br>指定の民間車検工場</h3>
+        <p>検査員が<strong>常駐</strong>しているため、車検時間を短縮。お客様をお待たせしません。</p>
+      </div>
+      <div class="point">
+        <span class="num">02</span>
+        <h3>創業1956年<br>70年の整備実績</h3>
+        <p>昭和31年の設立以来、地域とともに歩んできた<strong>信頼と技術</strong>があります。</p>
+      </div>
+      <div class="point">
+        <span class="num">03</span>
+        <h3>年間3,000台の<br>メンテナンス実績</h3>
+        <p>技術・スピード・精度に自信。<strong>鈑金工場併設</strong>でトータルサポートします。</p>
+      </div>
+      <div class="point">
+        <span class="num">04</span>
+        <h3>大手リース会社<br>11社との取引実績</h3>
+        <p>住友三井オートサービス、オリックス自動車など<strong>大手リース会社</strong>の整備委託実績。</p>
+      </div>
+      <div class="point">
+        <span class="num">05</span>
+        <h3>代車完備<br>引き取り・出張対応</h3>
+        <p>代車・引き取りサービス完備。<strong>出張作業</strong>にも対応し、業務を止めません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- サービス -->
+<section class="sec" id="service01">
+  <div class="inner">
+    <div class="sec-head">
+      <span class="en">Service</span>
+      <h2>三好工場のサービス</h2>
+    </div>
+
+    <div class="service">
+      <div class="service-img"><img src="https://images.pexels.com/photos/7019365/pexels-photo-7019365.jpeg?auto=compress&cs=tinysrgb&w=900" alt="車検・完成検査"></div>
+      <div class="service-body">
+        <span class="num">01</span>
+        <h3>車検・定期点検</h3>
+        <span class="en">Car Inspection &amp; Maintenance</span>
+        <p>名古屋陸運局指定工場だから、検査員が常駐。車検にかかる時間を大幅に短縮できます。乗用車からトラックまで、法定点検・日常メンテナンスもお任せください。</p>
+        <ul>
+          <li>指定工場ならではのスピード車検</li>
+          <li>2ヶ月前からのご案内・1ヶ月前点検の徹底</li>
+          <li>代車無料貸出・引き取り納車対応</li>
+        </ul>
+        <table class="price-table">
+          <caption>車検料金の目安（基本料27,500円＋法定費用）</caption>
+          <thead><tr><th>車種</th><th>料金</th></tr></thead>
+          <tbody>
+            <tr><td>軽自動車</td><td class="price">64,240円〜</td></tr>
+            <tr><td>乗用車（1.5t以下）</td><td class="price">74,150円〜</td></tr>
+            <tr><td>トラック・大型車輌</td><td class="price">お見積り</td></tr>
+          </tbody>
+        </table>
+        <p class="price-note">※交換部品・追加整備の工賃は別途申し受けます。</p>
+      </div>
+    </div>
+
+    <!-- サービス02 トラック整備 -->
+    <div class="service" id="service02">
+      <div class="service-img"><img src="https://images.pexels.com/photos/7564862/pexels-photo-7564862.jpeg?auto=compress&cs=tinysrgb&w=900" alt="大型トラック整備"></div>
+      <div class="service-body">
+        <span class="num">02</span>
+        <h3>トラック・大型車輌整備</h3>
+        <span class="en">Truck Maintenance</span>
+        <p>三好工場は大型車輌に対応した整備設備を備え、運送業・建設業のお客様の車輌をスピーディーに整備。突発的な故障にも対応し、お客様の稼働を守ります。</p>
+        <ul>
+          <li>小型〜大型トラックの整備・修理</li>
+          <li>パンク・バッテリー上がり等の突発修理対応</li>
+          <li>出張作業対応で業務への影響を最小限に</li>
+          <li>法人車輌の一括管理・定期点検のご案内</li>
+        </ul>
+        <a class="btn-more" href="truck.html">トラック整備の専門ページを見る →</a>
+      </div>
+    </div>
+
+    <!-- サービス03 鈑金・塗装 -->
+    <div class="service" id="service03">
+      <div class="service-img"><img src="https://images.pexels.com/photos/6870314/pexels-photo-6870314.jpeg?auto=compress&cs=tinysrgb&w=900" alt="鈑金・塗装"></div>
+      <div class="service-body">
+        <span class="num">03</span>
+        <h3>鈑金・塗装</h3>
+        <span class="en">Sheet Metal &amp; Painting</span>
+        <p>小さな傷の補修から事故による大型修復まで、60年以上にわたり培ってきた技術で対応します。整備工場併設だから、修理から車検までワンストップ。</p>
+        <ul>
+          <li>小傷・へこみ修理から大型修復まで</li>
+          <li>トラック架装部分の修理・塗装</li>
+          <li>保険を使った事故修理のご相談も対応</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- サービス04 フォークリフト -->
+    <div class="service" id="service04">
+      <div class="service-img"><img src="https://images.pexels.com/photos/11666903/pexels-photo-11666903.jpeg?auto=compress&cs=tinysrgb&w=900" alt="フォークリフト整備"></div>
+      <div class="service-body">
+        <span class="num">04</span>
+        <h3>フォークリフト整備</h3>
+        <span class="en">Forklift Service</span>
+        <p>フォークリフト登録検査業者として、年次検査（特定自主検査）・月例点検・修理に対応。トヨタL&amp;F中部、ロジスネクスト中部との取引実績があります。</p>
+        <ul>
+          <li>特定自主検査（年次検査）の実施</li>
+          <li>月例点検・故障修理・出張対応</li>
+          <li>新車・中古車の販売、レンタルのご相談</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- サービス05 リース・販売 -->
+    <div class="service" id="service05">
+      <div class="service-img"><img src="https://images.pexels.com/photos/9309636/pexels-photo-9309636.jpeg?auto=compress&cs=tinysrgb&w=900" alt="4tトラック（キャブオーバー箱車）"></div>
+      <div class="service-body">
+        <span class="num">05</span>
+        <h3>リースメンテナンス・車両販売</h3>
+        <span class="en">Lease Maintenance &amp; Car Sales</span>
+        <p>大手リース会社11社との提携により、リース車輌のメンテナンスを一括サポート。新車・中古車の販売、定額メンテナンス、各種保険のご提案も行います。</p>
+        <ul>
+          <li>リース車輌の車検・点検・突発修理</li>
+          <li>自動車・フォークリフトの新車・中古車販売</li>
+          <li>定額メンテナンス・ファイナンスリースのご提案</li>
+          <li>損害保険・生命保険代理店業務</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- アクセス -->
+<section class="sec sec-gray" id="access">
+  <div class="inner">
+    <div class="sec-head">
+      <span class="en">Access</span>
+      <h2>アクセス</h2>
+    </div>
+    <div class="access-grid">
+      <div class="access-map">
+        <iframe src="https://maps.google.com/maps?q=%E3%81%BF%E3%82%88%E3%81%97%E5%B8%82%E4%B8%89%E5%A5%BD%E7%94%BA%E4%B8%AD%E9%AF%B0%E3%83%B6%E6%B1%A083%E7%95%AA%E5%9C%B01&output=embed" loading="lazy" title="三好工場の地図"></iframe>
+      </div>
+      <div class="access-info">
+        <dl>
+          <dt>名称</dt><dd>フジ自動車工業株式会社 三好工場</dd>
+          <dt>所在地</dt><dd>〒470-0224<br>愛知県みよし市三好町中鯰ヶ池83番地1</dd>
+          <dt>電話番号</dt><dd><span class="tel-big">0561-32-2131</span></dd>
+          <dt>受付時間</dt><dd>平日 8:20〜17:20</dd>
+          <dt>対応車種</dt><dd>軽自動車・乗用車・小型〜大型トラック・フォークリフト</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 採用 -->
+<section class="sec" id="recruit">
+  <div class="inner">
+    <div class="recruit-box">
+      <h3>RECRUIT — 一緒に働く仲間を募集しています</h3>
+      <p>フジ自動車工業では、自動車整備士・サービスフロントスタッフを募集しています。創業70年、地域とともに歩む会社で、あなたの技術と経験を活かしませんか。未経験の方もご相談ください。</p>
+      <a class="btn-white" href="https://corp.fuji-auto-ind.co.jp/" target="_blank" rel="noopener">採用情報を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- 会社情報 -->
+<section class="sec sec-gray" id="company">
+  <div class="inner">
+    <div class="sec-head">
+      <span class="en">Company</span>
+      <h2>会社情報</h2>
+    </div>
+    <div class="company-grid">
+      <div>
+        <table class="company-table">
+          <tr><th>社名</th><td>フジ自動車工業株式会社</td></tr>
+          <tr><th>代表者</th><td>代表取締役　山田 久利</td></tr>
+          <tr><th>設立</th><td>1956年（昭和31年）5月</td></tr>
+          <tr><th>資本金</th><td>1,900万円</td></tr>
+          <tr><th>事業内容</th><td>自動車整備業務（軽自動車から大型トラックまで）／フォークリフト整備業務／鈑金塗装業務／自動車・フォークリフトの新車・中古車販売／定額メンテナンス・ファイナンスリース提案／損害保険・生命保険代理店業務</td></tr>
+          <tr><th>主要認証</th><td>車検整備工場 認証・指定（名古屋陸運局指定工場）／フォークリフト登録検査業者</td></tr>
+          <tr><th>主要取引先</th><td>住友三井オートサービス／オリックス自動車／日本カーソリューションズ／三菱オートリース／トヨタL&amp;F中部／ロジスネクスト中部　ほか</td></tr>
+          <tr><th>拠点</th><td>本社・本社工場（名古屋市昭和区）／三好工場（みよし市）／一宮工場（一宮市）／中央自動車工業株式会社（津島市・グループ会社）</td></tr>
+        </table>
+      </div>
+      <div>
+        <ul class="history">
+          <li><span class="year">1956年</span>フジ自動車工業株式会社 設立</li>
+          <li><span class="year">1958年</span>車検整備工場の認証を取得</li>
+          <li><span class="year">1970年</span>損害保険代理店業務を開始</li>
+          <li><span class="year">2002年</span>フォークリフト検査業務を開始</li>
+          <li><span class="year">2018年</span>中央自動車工業株式会社がグループ入り</li>
+          <li><span class="year">2026年</span>創業70周年</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact-band" id="contact">
+  <h2>お見積り・ご相談はお気軽に</h2>
+  <p>車検のご予約、トラックの整備・修理、フォークリフトの点検など、まずはお電話ください。</p>
+  <div class="tel">☎ 0561-32-2131</div>
+  <div class="hours">フジ自動車工業株式会社 三好工場｜受付：平日 8:20〜17:20</div>
+</section>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="inner">
+    <div class="footer-grid">
+      <div>
+        <h4>本社・本社工場</h4>
+        <p>〒466-0058<br>名古屋市昭和区白金2-11-22<br>TEL 052-882-9111<br>自動車整備・鈑金塗装・車両販売</p>
+      </div>
+      <div>
+        <h4>三好工場<span>当サイト</span></h4>
+        <p>〒470-0224<br>みよし市三好町中鯰ヶ池83番地1<br>TEL 0561-32-2131<br>トラック・大型車輌整備・車検</p>
+      </div>
+      <div>
+        <h4>一宮工場</h4>
+        <p>〒491-0046<br>一宮市天王2丁目6-18<br>TEL 0586-64-9924<br>フォークリフト整備</p>
+      </div>
+      <div>
+        <h4>中央自動車工業株式会社</h4>
+        <p>〒496-0011<br>津島市莪原町河原143-1<br>TEL 0567-24-5123<br>グループ会社</p>
+      </div>
+    </div>
+    <div class="footer-slogan">車を通じた、一生涯のお付き合いを目指して。</div>
+    <div class="footer-copy">
+      © FUJI JIDOSHA KOGYO Co., Ltd. All Rights Reserved.
+      <span class="credit">Photos: Pexels（差し替え用のフリー画像を使用しています）</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
