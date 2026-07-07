@@ -13,7 +13,14 @@
 ## 公開について
 
 - GitHub Pages で公開しています（`main` ブランチ直下を配信）。
-- **検索避け（`noindex`）を設定済み**。Google 等の検索結果には出ません。URL を知っている人だけが閲覧できます。
+- **本番公開（検索エンジンに掲載）**。`index, follow` で Google 等にインデックスされます。
+
+## SEO対策
+
+- 構造化データ（JSON-LD）：`AutoRepair`（NAP・営業時間・エリア）／トラックページに `FAQPage`・`BreadcrumbList`
+- OGP・Twitter カード（SNS シェア時のプレビュー）
+- `canonical` / `sitemap.xml` / `robots.txt` / favicon / `theme-color`
+- タイトル・ディスクリプションに地域＋サービスのキーワード（トラック整備・車検・みよし市 など）
 
 ## 未確定・差し替え予定（下書き段階）
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imai-akiko.github.io/fuji-miyoshi-site/sitemap.xml
